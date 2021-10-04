@@ -62,3 +62,18 @@ font-size: 25px;
     margin-bottom: 60px; */
 }
 
+/* Create two equal columns that floats next to each other */
+.column {
+    /* float: left; */
+    width: 150px;
+    padding: 10px;
+    height: 100%; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row {
+    display: grid;
+    /* height: 100px; */
+    grid-template-columns: 1fr 3fr;
+  }
+
