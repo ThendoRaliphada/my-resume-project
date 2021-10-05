@@ -1,19 +1,20 @@
 header{color: white;
 background-color: black;
 text-align: center;
-margin-bottom: 0%;
+
 
 }
+.div{
+background-color: cadetblue;
+padding-top: 30px ;
+padding-right: 0px;
+padding-bottom: 300px;
+padding-left: 10px;
+margin-top: -24px;
+margin-right: 30px;
+margin-bottom: 0px;
 
-div{background-color:rgb(66, 163, 142);
-        padding-top: 20px;
-        padding-right: 15%;
-        padding-bottom: 120px;
-        padding-left: 47px;
-        margin-top: -24px;
-        margin-right: 2500px;
-        margin-bottom: -60px;
-        margin-left: -40px;
+
 }
 
 img{
@@ -40,14 +41,29 @@ footer{
     background-color: black;
     height: 85px;
     padding-top: 5px;
-    padding-bottom: 15px;
-    margin-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 0px;
    
     
 }
 
-#p{
+.p{
 font-size: 25px;
 }
 
+.row {
+display: flex;
+}
 
+.column-1 {
+    float: left;
+    flex: 30%;
+}
+
+.column-2{
+    float: right;
+    flex: 70%;
+}
+.menu{
+    text-align: center;
+}
