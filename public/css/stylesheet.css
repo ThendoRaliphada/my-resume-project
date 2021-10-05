@@ -51,22 +51,3 @@ font-size: 25px;
 }
 
 
-.container {
-    height: 90vh;
-    margin: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  .box {
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    padding: 4rem;
-  }
-  .box-1 {
-    background: deepskyblue;
-  }
-  .box-2 {
-    background: orangered;
-  }
