@@ -1,0 +1,125 @@
+header{
+    text-align: center;
+    padding-bottom: 25px;
+    }
+    
+    img{
+        width: 15vh;
+        border-style: solid ;
+        border-color: cadetblue ;
+        border-radius: 50%;
+        border-width: thick;
+    }
+
+body{
+    color: white;
+    font-size:x-large;
+}
+.background{
+    background-image:url(/public/images/background1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat:repeat;
+    background-color: lightblue;
+    height: 300px;
+    padding-top: 5px;
+}
+footer{
+    text-align: center;
+    height: 90px;
+    padding-bottom: 80px;
+}
+
+.icon{ 
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: cornflowerblue solid 2px;
+    animation: onPageload 3s infinite;
+}
+@keyframes onPageload{
+   0% {
+        background-color: cadetblue;
+    }
+
+    50%{
+        background-color:rgb(167, 131, 201);
+    }
+
+    100% {
+        background-color: cornflowerblue; 
+    }
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"          
+    "sidebar main main main"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+    grid-gap: 5px;
+}
+
+nav{
+    background-color: rgb(166, 166, 241);
+    grid-area: nav;
+    text-align: center;
+}
+main{
+    background-color:rgb(125, 125, 235) ;
+    grid-area: main;
+}
+#sidebar{
+    background-color: rgb(144, 144, 248);
+    grid-area: sidebar;
+}
+#content1{
+    background-color: rgb(161, 161, 212);
+    grid-area: content1;
+}
+
+footer{
+    background-color: rgb(88, 88, 202) ;
+    grid-area: footer; 
+}
+
+@media only screen and (max-width:650px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr  1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "footer";
+    }  
+}
+  
+@media only screen and (min-width:1000px) {
+    .container{
+        grid-template-columns:1fr 1fr 1fr  ;
+        grid-template-rows: 0.4fr 2.4fr 1.2fr ;
+        grid-template-areas: 
+        "nav nav nav"          
+        "sidebar main content1"
+        "footer footer footer";
+    }  
+   
+}
+@media only screen and (min-width:1200px) {
+    .container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav nav"          
+    "sidebar main main main"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+    }  
+}
+
+
